@@ -1,5 +1,8 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
-
+var Photos = DS.Model.extend({
+  title: DS.attr('string'),
+  photos: DS.hasMany('photo')
 });
+
+export default Photos;
