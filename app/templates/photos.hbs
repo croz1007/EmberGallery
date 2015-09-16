@@ -1,2 +1,5 @@
 <h3>Gallery</h3>
+{{#each model as |photo|}}
+  <li>{{photo.title}}</li>
+{{/each}}
 {{outlet}}
