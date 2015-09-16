@@ -24,9 +24,22 @@ nav a {
   padding: 4px;
   display: inline-block;
   font-size: .9rem;
+  text-align: center;
 }
-.photo label {
+.photo .photoData {
+  text-align: left;
+}
+.photo .photoData label {
   font-weight: bold;
+}
+.photo img {
+  border: 5px solid #000;
+  margin: 8px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.4);
+  border-radius: 7px;
+}
+.photo img:hover {
+  box-shadow: 0 0 5px 5px rgba(0,50,150,.75);
 }
 footer {
   font-size: .75rem;

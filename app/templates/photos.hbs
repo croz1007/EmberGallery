@@ -1,12 +1,15 @@
 <h3>Gallery</h3>
 {{#each model as |photo|}}
   <div class="photo">
-    <label>Title: </label>{{photo.title}}<br>
-    <label>Description: </label>{{photo.description}}<br>
-    <label>Location: </label>{{photo.location}}<br>
-    <label>F-Stop: </label>{{photo.aperture}}<br>
-    <label>Shutter: </label>{{photo.shutter}}<br>
-    <label>ISO: </label>{{photo.iso}}<br>
+    <img src="http://fillmurray.com/100/150" alt="fillMurray">
+    <div class="photoData">
+      <label>Title: </label>{{photo.title}}<br>
+      <label>Description: </label>{{photo.description}}<br>
+      <label>Location: </label>{{photo.location}}<br>
+      <label>F-Stop: </label>{{photo.aperture}}<br>
+      <label>Shutter: </label>{{photo.shutter}}<br>
+      <label>ISO: </label>{{photo.iso}}<br>
+    </div>
   </div>
 {{/each}}
 {{outlet}}
