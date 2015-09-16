@@ -1,5 +1,12 @@
 <h3>Gallery</h3>
 {{#each model as |photo|}}
-  <li>{{photo.title}}</li>
+  <div class="photo">
+    <label>Title: </label>{{photo.title}}<br>
+    <label>Description: </label>{{photo.description}}<br>
+    <label>Location: </label>{{photo.location}}<br>
+    <label>F-Stop: </label>{{photo.aperture}}<br>
+    <label>Shutter: </label>{{photo.shutter}}<br>
+    <label>ISO: </label>{{photo.iso}}<br>
+  </div>
 {{/each}}
 {{outlet}}
