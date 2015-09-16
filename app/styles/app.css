@@ -1,0 +1,23 @@
+body {
+  font-family: Helvetica, arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #ccc;
+}
+#wrapper {
+  margin: 0 20px;
+  background: white;
+  min-height: 800px;
+}
+nav {
+  padding: 15px 10px;
+}
+nav a {
+  padding: 3px 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  font-size: .75rem;
+  padding: 5px 10px;
+}

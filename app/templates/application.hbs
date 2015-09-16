@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div id="wrapper">
+  <nav>
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'photos'}}Photos{{/link-to}}
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact{{/link-to}}
+  </nav>
+  <section>
+    {{outlet}}
+  </section>
+  <footer>
+    <small>&copy;2015 Crosby</small>
+  </footer>
+</div>
