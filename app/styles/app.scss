@@ -8,15 +8,7 @@ body {
 img {
   border: 2px solid #CCC;
 }
-a:visited {
-  color: lightblue;
-}
-a:hover {
-  color: lightgreen;
-}
-a.active {
-  color: yellow;
-}
+
 #wrapper {
   margin: 0 20px;
   min-height: 800px;
@@ -28,6 +20,15 @@ a.active {
       text-decoration: none;
       font-weight: bold;
       text-align: center;
+    }
+    a:visited {
+      color: lightblue;
+    }
+    a:hover {
+      color: lightgreen;
+    }
+    a.active {
+      color: yellow;
     }
   }
   .main {
