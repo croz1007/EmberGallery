@@ -1,18 +1,21 @@
 <h3>{{model.title}}</h3>
 <hr>
-<div class="photoData col-md-3">
-  <label>Title: </label>{{model.title}}<br>
-  <label>Description: </label>{{model.description}}<br>
-  <label>Location: </label>{{model.location}}<br>
-  <label>F-Stop: </label>{{model.aperture}}<br>
-  <label>Shutter: </label>{{model.shutter}}<br>
-  <label>ISO: </label>{{model.iso}}<br>
+<div class="row">
+  <div class="photoData col-md-3">
+    <label>Title: </label>{{model.title}}<br>
+    <label>Description: </label>{{model.description}}<br>
+    <label>Location: </label>{{model.location}}<br>
+    <label>F-Stop: </label>{{model.aperture}}<br>
+    <label>Shutter: </label>{{model.shutter}}<br>
+    <label>ISO: </label>{{model.iso}}<br>
+  </div>
+  <div class="col-md-8">
+    <img src={{model.src}} alt={{model.title}} class="img-rounded">
+  </div>
 </div>
-<div class="col-md-8">
-  <img src={{model.src}} alt={{model.title}} class="img-rounded">
-</div>
-<br>
+<div class="row">
 {{#link-to 'photos'}}Back{{/link-to}}
+</div>
 <div class="main">
   {{outlet}}
 </div>
