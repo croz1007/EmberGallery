@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 var Photo = Ember.Route.extend({
-  model: function(param){
-    return this.store.find(param);
+  model: function(params){
+    return this.store.find('photo', params.photo_id);
   }
 });
 

@@ -1,0 +1,16 @@
+<div class="photo">
+  <img src={{model.src}} alt={{model.title}}>
+  <div class="photoData">
+    <label>Title: </label>{{model.title}}<br>
+    <label>Description: </label>{{model.description}}<br>
+    <label>Location: </label>{{model.location}}<br>
+    <label>F-Stop: </label>{{model.aperture}}<br>
+    <label>Shutter: </label>{{model.shutter}}<br>
+    <label>ISO: </label>{{model.iso}}<br>
+  </div>
+</div>
+<br>
+{{#link-to 'photos'}}Back{{/link-to}}
+<div class="main">
+  {{outlet}}
+</div>
