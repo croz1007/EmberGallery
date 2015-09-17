@@ -1,7 +1,7 @@
 <h3>Gallery</h3>
 {{#each model as |photo|}}
   <div class="photo">
-    <img src="http://fillmurray.com/100/150" alt="fillMurray">
+    {{#link-to 'photos.photo'}}<img src={{photo.src}} alt={{photo.title}}>{{/link-to}}
     <div class="photoData">
       <label>Title: </label>{{photo.title}}<br>
       <label>Description: </label>{{photo.description}}<br>
@@ -12,4 +12,6 @@
     </div>
   </div>
 {{/each}}
-{{outlet}}
+<div class="main">
+  {{outlet}}
+</div>

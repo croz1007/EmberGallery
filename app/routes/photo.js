@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-  model(params){
-    return Ember.$.getJSON('/photos/' + params.id);
+var Photo = Ember.Route.extend({
+  model: function(param){
+    return this.store.find(param);
   }
 });
+
+export default Photo;
