@@ -1,7 +1,8 @@
 <h3>Gallery</h3>
+<hr>
 {{#each model as |photo|}}
   <div class="photo">
-    {{#link-to 'photos.photo' photo}}<img src={{photo.src}} alt={{photo.title}}>{{/link-to}}
+    {{#link-to 'photos.photo' photo}}<img src={{photo.src}} alt={{photo.title}} class="img-rounded img-responsive h">{{/link-to}}
     <div class="photoData">
       <label>Title: </label>{{photo.title}}<br>
       <label>Description: </label>{{photo.description}}<br>

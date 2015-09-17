@@ -8,7 +8,8 @@ var Photo = DS.Model.extend({
   aperture: DS.attr('string'),
   shutter: DS.attr('string'),
   iso: DS.attr('number'),
-  src: DS.attr('string')
+  src: DS.attr('string'),
+  photos: DS.belongsTo('photos')
 });
 
 Photo.reopenClass({
@@ -22,7 +23,7 @@ Photo.reopenClass({
       aperture: 'f/2.8',
       shutter: '1/50',
       iso: 100,
-      src: 'http://fillmurray.com/105/120'
+      src: 'http://fillmurray.com/500/600'
     },
     {
       id: 2,
@@ -33,7 +34,7 @@ Photo.reopenClass({
       aperture: 'f/16',
       shutter: '1/250',
       iso: 100,
-      src: 'http://fillmurray.com/100/150'
+      src: 'http://fillmurray.com/450/500'
     },
     {
       id: 3,
@@ -44,7 +45,7 @@ Photo.reopenClass({
       aperture: 'f/2.8',
       shutter: '1/500',
       iso: 100,
-      src: 'http://fillmurray.com/120/150'
+      src: 'http://fillmurray.com/420/550'
     },
     {
       id: 4,
@@ -55,7 +56,7 @@ Photo.reopenClass({
       aperture: 'f/5.6',
       shutter: '1/150',
       iso: 100,
-      src: 'http://fillmurray.com/130/175'
+      src: 'http://fillmurray.com/330/375'
     },
     {
       id: 5,
@@ -66,7 +67,40 @@ Photo.reopenClass({
       aperture: 'f/2.8',
       shutter: '1/50',
       iso: 100,
-      src: 'http://fillmurray.com/120/140'
+      src: 'http://fillmurray.com/520/340'
+    },
+    {
+      id: 6,
+      title: 'Photo 6',
+      description: 'This is the sixth',
+      location: 'Dallas, TX',
+      dateTaken: new Date('09-07-2015'),
+      aperture: 'f/8',
+      shutter: '1/50',
+      iso: 100,
+      src: 'http://fillmurray.com/420/550'
+    },
+    {
+      id: 7,
+      title: 'Photo 7',
+      description: 'This is the seventh',
+      location: 'San Diego, CA.',
+      dateTaken: new Date('09-08-2015'),
+      aperture: 'f/5.6',
+      shutter: '1/150',
+      iso: 100,
+      src: 'http://fillmurray.com/130/375'
+    },
+    {
+      id: 8,
+      title: 'Photo 8',
+      description: 'This is the eigth',
+      location: 'Columbus, OH',
+      dateTaken: new Date('09-15-2015'),
+      aperture: 'f/2.8',
+      shutter: '1/50',
+      iso: 100,
+      src: 'http://fillmurray.com/500/240'
     }
   ]
 });
