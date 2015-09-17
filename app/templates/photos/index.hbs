@@ -1,7 +1,7 @@
 <h3>Gallery</h3>
 {{#each model as |photo|}}
   <div class="photo">
-    {{#link-to 'photos.photo'}}<img src={{photo.src}} alt={{photo.title}}>{{/link-to}}
+    {{#link-to 'photos.show' photo}}<img src={{photo.src}} alt={{photo.title}}>{{/link-to}}
     <div class="photoData">
       <label>Title: </label>{{photo.title}}<br>
       <label>Description: </label>{{photo.description}}<br>
