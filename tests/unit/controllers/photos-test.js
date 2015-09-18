@@ -2,7 +2,7 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('controller:photos', {
   // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['controller:photo']
 });
 
 // Replace this with your real tests.

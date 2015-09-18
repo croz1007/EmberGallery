@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('photo', 'Unit | Model | photo', {
   // Specify the other units that are required for this test.
-  needs: ['model:photo']
+  needs: ['model:photos']
 });
 
 test('it exists', function(assert) {
