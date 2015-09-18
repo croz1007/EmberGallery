@@ -4,13 +4,12 @@ var Photo = DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string'),
   location: DS.attr('string'),
-  dateTaken: DS.attr('date'),
-  aperture: DS.attr('string'),
+  dateTaken: DS.attr('string'),
+  aperture: DS.attr(),
   shutter: DS.attr('string'),
-  iso: DS.attr('number'),
-  src: DS.attr('string')
-  // ,
-  // photos: DS.belongsTo('photos')
+  iso: DS.attr('string'),
+  src: DS.attr('string'),
+  photos: DS.belongsTo('photos')
 });
 
 Photo.reopenClass({
