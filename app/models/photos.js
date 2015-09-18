@@ -4,8 +4,9 @@ var Photos = DS.Model.extend({
   title: DS.attr('string'),
   createDate: DS.attr('string', {
       defaultValue() { return new Date(); }
-  }),
-  photo: DS.hasMany('photo')
+  })
+  // ,
+  // photo: DS.hasMany('photo')
 });
 
 export default Photos;

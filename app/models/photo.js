@@ -8,8 +8,9 @@ var Photo = DS.Model.extend({
   aperture: DS.attr('string'),
   shutter: DS.attr('string'),
   iso: DS.attr('number'),
-  src: DS.attr('string'),
-  photos: DS.belongsTo('photos')
+  src: DS.attr('string')
+  // ,
+  // photos: DS.belongsTo('photos')
 });
 
 Photo.reopenClass({
