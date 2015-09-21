@@ -1,5 +1,7 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
-  
+var Results = DS.Model.extend({
+
 });
+
+export default Results;

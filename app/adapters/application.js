@@ -1,5 +1,9 @@
 import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
-  namespace: 'api'
+  namespace: 'api',
+  headers: {
+    'sellerId': '208364',
+    'privateKey': '2222'
+  }
 });
